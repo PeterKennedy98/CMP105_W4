@@ -7,18 +7,16 @@
 #include <iostream>
 #include "Level.h"
 
-class Player : public GameObject
+class Enemy : public GameObject
 {
-
 public:
-	Player();
-	~Player();
+	Enemy();
+	~Enemy();
 
 	float speed;
 
 	sf::RenderWindow* window;
 
-	void handleInput(float dt);
+	void EnemyMovement(float dt);
 
 };
-
